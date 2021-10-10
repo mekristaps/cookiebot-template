@@ -5,7 +5,7 @@
 <p>This is a custom <a href="https://cookiebot.com" target="_blank">Cookiebot</a> template. Copy & paste files, adjust to your own liking or use as it is.</p>
 
 <p align="center">
-  <img src="https://github.com/MeKristaps/cookiebot-custom/blob/main/preview.gif?raw=true" width="450" title="Cookiebanner preview gif">
+  <img src="https://github.com/MeKristaps/cookiebot-template/blob/main/preview.gif?raw=true" width="450" title="Cookiebanner preview gif">
 </p>
 
 <h2 align="center">How to use?</h2>
