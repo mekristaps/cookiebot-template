@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cookiebanner custom teplate</title>
+        <meta name="description" content="">
+        <meta name="author" content="Kristaps Melnis @mekristaps https://mekristaps.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- COOKIEBANNER START -->
+
+            <div id="CookieBanner" class="cookiebanner__alternative js-cookiebanner">
+                <!-- OVERLAY START -->
+                <div id="CookieBannerOverlay" class="cookiebanner__overlay"></div>
+                <!-- OVERLAY END -->
+                <div id="CookieBannerNotice" class="cookiebanner__content js-cookie-content" lang="[#LANGUAGE#]" dir="[#TEXTDIRECTION#]" role="dialog" aria-labelledby="CookieBannerTitle" aria-describedby="CookieBannerDescription" ng-non-bindable data-author="Kristaps Melnis @mekristaps" data-author-website="https://mekristaps.com">
+                    <!-- CLOSE BUTTON START -->
+                    <div id="CybotCookiebotDialogBodyButtonDecline" class="cookiebanner__close-button js-close-cookiebanner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill-rule="evenodd" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <!-- CLOSE BUTTON END -->
+                    <div class="cookiebanner__header">
+                        <div id="CookieBannerTitle" class="cookiebanner__title" role="status" lang="[#LANGUAGE#]">[#TITLE#]</div>
+                        <div id="CookieBannerDescription" class="cookiebanner__description" lang="[#LANGUAGE#]">[#TEXT#]</div>
+                    </div>
+                    <div class="cookiebanner__action-wrapper">
+                     
+                        <!-- ACTIONS BUTTONS START -->
+                        <div class="cookiebanner__actions">
+                            <!-- Decline all -->
+                            <div id="CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll" 
+                                class="cookiebanner__actions--alt-button is-showing js-close-cookiebanner" lang="[#LANGUAGE#]">
+                                [#DECLINE#]
+                            </div>
+                            
+                            <!-- Accept selected -->
+                            <div id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" 
+                                class="cookiebanner__actions--alt-button js-accept-selected-cookiebanner" lang="[#LANGUAGE#]">
+                                [#LEVELOPTIN_ALLOW_SELECTION#]
+                            </div>
+
+                            <!-- Accept -->
+                            <div id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" 
+                                class="cookiebanner__actions--accept is-showing js-accept-cookiebot" lang="[#LANGUAGE#]">
+                                [#LEVELOPTIN_ALLOWALL#]
+                            </div>
+                            <!-- Accept selection --hidden -->
+                            <div class="cookiebanner__actions--accept__selected js-accept-selected-cookiebot" lang="[#LANGUAGE#]">
+                                [#LEVELOPTIN_ALLOW_SELECTION#]
+                            </div>
+                            <!-- Show more options -->
+                        </div>
+                        <!-- ACTION BUTTONS END-->
+
+                        <!-- DETAILS TOGGLE START-->
+                        <div class="cookiebanner__actions--details">
+                            <div class="cookiebanner__actions--edit js-toggle-cookie-information" aria-expanded="false" lang="[#LANGUAGE#]">
+                                [#DETAILS#] <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.175 9L12 12.863 15.825 9 17 10.19l-5 5.06-5-5.06z" fill-rule="evenodd" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- DETAILS TOGGLE END -->
+                    </div>
+
+                    <!-- COOKIE INFORMATION START -->
+                    <div class="cookiebanner__details js-cookie-information">
+                        <div class="cookiebanner__details--list">
+
+                            <div class="cookiebanner__details--item">
+                                <div class="cookiebanner__details--item--header">
+                                    <div class="cookiebanner__details--item--title js-cookie-alt-switcher" data-target="StrictlyNecessary" lang="[#LANGUAGE#]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.175 9L12 12.863 15.825 9 17 10.19l-5 5.06-5-5.06z" fill-rule="evenodd" fill="currentColor"/>
+                                        </svg> [#COOKIETYPE_NECESSARY#]
+                                    </div>
+                                    <div class="cookiebanner__details--item--description" lang="[#LANGUAGE#]">
+                                        [#COOKIETYPEINTRO_NECESSARY#]
+                                    </div>
+                                </div>
+                                <div class="cookiebanner__details--item--content" data-cookie-information="StrictlyNecessary" lang="[#LANGUAGE#]">
+                                    [#COOKIETYPEINTRO_NECESSARY#]
+                                    [#COOKIETABLE_NECESSARY#]
+                                </div>
+                            </div>
+
+                            <div class="cookiebanner__details--item">
+                                <div class="cookiebanner__details--item--header">
+                                    <div class="cookiebanner__details--item--title js-cookie-alt-switcher" data-target="Functional" lang="[#LANGUAGE#]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.175 9L12 12.863 15.825 9 17 10.19l-5 5.06-5-5.06z" fill-rule="evenodd" fill="currentColor"/>
+                                        </svg> [#COOKIETYPE_PREFERENCE#]
+                                    </div>
+                                    <div class="cookiebanner__details--item--description" lang="[#LANGUAGE#]">
+                                        [#COOKIETYPEINTRO_PREFERENCE#]
+                                    </div>
+                                </div>
+                                <div class="cookiebanner__details--item--content" data-cookie-information="Functional" lang="[#LANGUAGE#]">
+                                    [#COOKIETYPEINTRO_PREFERENCE#]
+                                    [#COOKIETABLE_PREFERENCE#]
+                                </div>
+                            </div>
+
+                            <div class="cookiebanner__details--item">
+                                <div class="cookiebanner__details--item--header">
+                                    <div class="cookiebanner__details--item--title js-cookie-alt-switcher" data-target="PerformanceCookies" lang="[#LANGUAGE#]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.175 9L12 12.863 15.825 9 17 10.19l-5 5.06-5-5.06z" fill-rule="evenodd" fill="currentColor"/>
+                                        </svg> [#COOKIETYPE_STATISTICS#]
+                                    </div>
+                                    <div class="cookiebanner__details--item--description" lang="[#LANGUAGE#]">
+                                        [#COOKIETYPEINTRO_STATISTICS#]
+                                    </div>
+                                </div>
+                                <div class="cookiebanner__details--item--content" data-cookie-information="PerformanceCookies" lang="[#LANGUAGE#]">
+                                    [#COOKIETYPEINTRO_STATISTICS#]
+                                    [#COOKIETABLE_STATISTICS#]
+                                </div>
+                            </div>
+
+                            <div class="cookiebanner__details--item">
+                                <div class="cookiebanner__details--item--header">
+                                    <div class="cookiebanner__details--item--title js-cookie-alt-switcher" data-target="TargetingOrAdvertisingCookies" lang="[#LANGUAGE#]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.175 9L12 12.863 15.825 9 17 10.19l-5 5.06-5-5.06z" fill-rule="evenodd" fill="currentColor"/>
+                                        </svg> [#COOKIETYPE_ADVERTISING#]
+                                    </div>
+                                    <div class="cookiebanner__details--item--description" lang="[#LANGUAGE#]">
+                                        [#COOKIETYPEINTRO_ADVERTISING#]
+                                    </div>
+                                </div>
+                                <div class="cookiebanner__details--item--content" data-cookie-information="TargetingOrAdvertisingCookies" lang="[#LANGUAGE#]">
+                                    [#COOKIETYPEINTRO_ADVERTISING#]
+                                    [#COOKIETABLE_ADVERTISING#]
+                                </div>
+                            </div>
+
+                            <div class="cookiebanner__details--item">
+                                <div class="cookiebanner__details--item--header">
+                                    <div class="cookiebanner__details--item--title js-cookie-alt-switcher" data-target="Unclassified" lang="[#LANGUAGE#]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.175 9L12 12.863 15.825 9 17 10.19l-5 5.06-5-5.06z" fill-rule="evenodd" fill="currentColor"/>
+                                        </svg> [#COOKIETYPE_UNCLASSIFIED#]
+                                    </div>
+                                    <div class="cookiebanner__details--item--description" lang="[#LANGUAGE#]">
+                                        [#COOKIETYPEINTRO_UNCLASSIFIED#]
+                                    </div>
+                                </div>
+                                <div class="cookiebanner__details--item--content" data-cookie-information="Unclassified" lang="[#LANGUAGE#]">
+                                    [#COOKIETYPEINTRO_UNCLASSIFIED#]
+                                    [#COOKIETABLE_UNCLASSIFIED#]
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- COOKIE INFORMATION END -->
+
+                    <div class="cookiebanner__footer">
+                        <div class="cookiebanner__checkbox--list">
+                            <div class="cookiebanner__checkbox--item">
+                                <label class="cookiebanner__checkbox--field--checkbox js-cookie-checkbox" for="CybotCookiebotDialogBodyLevelButtonNecessary">
+                                    <div class="cookiebanner__checkbox--title" lang="[#LANGUAGE#]">[#COOKIETYPE_NECESSARY_RAW#]</div>
+                                    <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" name="CybotCookiebotDialogBodyLevelButtonNecessary" checked="checked" disabled/>
+                                    <div class="checkbox-toggle">
+                                        <div class="toggle"></div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="cookiebanner__checkbox--item">
+                                <label class="cookiebanner__checkbox--field--checkbox js-cookie-checkbox" for="CybotCookiebotDialogBodyLevelButtonPreference">
+                                    <div class="cookiebanner__checkbox--title" lang="[#LANGUAGE#]">[#COOKIETYPE_PREFERENCE_RAW#]</div>
+                                    <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreference" name="CybotCookiebotDialogBodyLevelButtonPreference" />
+                                    <div class="checkbox-toggle">
+                                        <div class="toggle"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="cookiebanner__checkbox--item">
+                                <label class="cookiebanner__checkbox--field--checkbox js-cookie-checkbox" for="CybotCookiebotDialogBodyLevelButtonStatistics">
+                                    <div class="cookiebanner__checkbox--title" lang="[#LANGUAGE#]">[#COOKIETYPE_STATISTICS_RAW#]</div>
+                                    <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" name="CybotCookiebotDialogBodyLevelButtonStatistics" />
+                                    <div class="checkbox-toggle">
+                                        <div class="toggle"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="cookiebanner__checkbox--item">
+                                <label class="cookiebanner__checkbox--field--checkbox js-cookie-checkbox" for="CybotCookiebotDialogBodyLevelButtonAdvertising">
+                                    <div class="cookiebanner__checkbox--title" lang="[#LANGUAGE#]">[#COOKIETYPE_ADVERTISING_RAW#]</div>
+                                    <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonAdvertising" name="CybotCookiebotDialogBodyLevelButtonAdvertising" />
+                                    <div class="checkbox-toggle">
+                                        <div class="toggle"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- COOKIEBANNER END -->
+        </div>
+        <script src="cookiebanner.js" async defer></script>
+    </body>
+</html>
