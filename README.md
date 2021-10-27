@@ -25,7 +25,7 @@
 <p>Either copy contents of style code from: <code>/demo/style.css</code> and paste into your own style code or simply download the css file and link it on your website.</p>
 	</li>
 	<li>
-	<p>As last step, download<code>/demo/cookiebanner.js</code> file and link it onto your website.</p>
+	<p>As last step, copy content from <code>/demo/cookiebanner.js</code> file into Cookiebot manager dialog tab javascript textarea.</p>
 	</li>
 </ol>
 
